@@ -1,5 +1,166 @@
+:root {
+    --primary:rgb(48, 47, 58);
+    --secondary:rgb(168, 208, 216);
+    --standard-px: 48px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+header {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--primary);
+    justify-content: space-between;
+}
+
+.name {
+    margin: 20px;
+    font-size: var(--standard-px);
+}
+
+header nav {
+    display: flex;    
+}
+
+header nav ul {
+    display: flex;
+    margin: 10px;
+    margin-right: 40px;
+    padding: 10px;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;    
+}
+
+header nav ul li {
+    padding: 10px;
+
+}
+
+header nav ul li a {
+    color: var(--secondary);   
+}
+
+.second-background {
+    display: flex;
+    justify-content: right;
+    height: 250px;
+    background-image: url("https://picsum.photos/300");   
+    margin-bottom: 20px; 
+}
+
+.second-background p {   
+    font-size: 25px;
+    position: absolute;
+    top: 270px;
+    background: var(--secondary);
+}
+
+.me-img {
+    position: absolute;
+    top: 100px;
+    left: 115px;
+    width: 209px;    
+}
+
+.me-img img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: rgb(239, 239, 247);
+}
+
+.desc {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.desc h2 {
+    text-align: right;
+}
+
+.desc div p {
+    margin: 0 0 0 20px;
+}
+
+.work {
+    display: flex;
+    margin-left: 57px;
+    margin-bottom: 20px;
+}
+
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    flex-direction: row;
+    flex: 1 1 40%;
+    margin-left: 20px;
+}
+
+.pics img {
+    max-width: 70%;
+}
+
+.headings {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 10px;
+    border-right: 3px solid var(--primary);
+    margin-left: 70px;
+}
+
+h2 {
+    font-size: var(--standard-px);
+    color: var(--primary);
+    text-align: right;
+}
+
+.pics img {
+    border: 5px solid var(--secondary);
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+
+footer div {
+    padding: 0 30px 0 0px;
+    width: 189px;
+    margin-left: 20px;
+}
+
+footer div h2 {
+    text-align: vertical;
+   
+}
+
+footer p {
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+    border-bottom: 3px solid var(--primary);
 }

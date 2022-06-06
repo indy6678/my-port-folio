@@ -3,56 +3,83 @@
     <head>
         <meta charset="UTF-8" />
         <title>Ed's Portfolio</title>
-        <link rel="stylesheet" href="#" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
     <body>
-        <!-- Page Navigation -->
-        <header>
-            <h1>
-                <a href="index.html">Eduardo Sanchez</a>
-                <img src="./assets/images/me.PNG" alt="Me!" />
-            </h1>
+        <section class="top">
+            <!-- Page Navigation -->
+            <header>
+                <h1 class="name">Eduardo Sanchez</h1>     
+                <nav>
+                    <!-- List of nav elements-->
+                    <ul>
+                        <li>
+                            <a href="#about-me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#my-work">My Work</a>
+                        </li>
+                        <li>
+                            <a href="#contact-me">Contact Me</a>
+                        </li>
+                        <li>
+                            <a href="#">My Resume</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-            <nav>
-                <!-- List of nav elements-->
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#my-work">My Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Me</a>
-                    </li>
-                    <li>
-                        <a href="#">My Resume</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+            <div class="me-img">
+                <img src="./assets/images/me.PNG" alt="Me!" />
+            </div>
+
+            <div class="second-background">
+                <p>Replace me with something cool!!</p>
+            </div>
+        </section>
 
         <!-- About me section -->
-        <section>
-            <h2 id="about-me">About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque, itaque quam consequuntur minima ipsum cum sequi. Ipsa, est, minima laudantium fugiat, nulla itaque vero dignissimos error officia quisquam inventore.</p>
-            <p>more Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam modi quis minima, facilis numquam ab excepturi atque laudantium temporibus ullam dolor, earum soluta velit eveniet, necessitatibus unde cupiditate dolores.</p>
+        <section class="desc">
+            <div class="headings">
+                <h2>About Me</h2>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque, itaque quam consequuntur minima ipsum cum sequi. Ipsa, est, minima laudantium fugiat, nulla itaque vero dignissimos error officia quisquam inventore.</p><br>
+                <p>more Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam modi quis minima, facilis numquam ab excepturi atque laudantium temporibus ullam dolor, earum soluta velit eveniet, necessitatibus unde cupiditate dolores.</p>
+            </div>
         </section>
 
         <!-- section depicting my work -->
-        <section>
-            <h2 id="my-work">Work</h2>
-            <img src="./assets/images/Run Buddy Screenshot.PNG" alt="Run Buddy Homepage" />
-            <img src="./assets/images/Horiseon Screenshot.png" alt="Horiseon Homepage" />
-            <img src="https://picsum.photos/300" alt="Placeholder 1" />
-            <img src="https://picsum.photos/300" alt="Placeholder 2" />
-            <img src="https://picsum.photos/300" alt="Placeholder 3" />
+        <section class="work">
+            <div class="headings">
+                <h2 id="my-work">Work</h2>
+            </div>
+            
+            <section class="pics">
+                <div>
+                    <img src="./assets/images/Run Buddy Screenshot.PNG" alt="Run Buddy Homepage" />
+                </div>
+                <div>
+                    <img src="./assets/images/Horiseon Screenshot.png" alt="Horiseon Homepage" />
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300" alt="Placeholder 1" />
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300" alt="Placeholder 2" />
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300" alt="Placeholder 3" />
+                </div>
+            </section> 
         </section>
 
         <!-- section containing my information -->
         <footer>
-            <h2 id="contact-me">Contact me</h2>
+            <div class="headings">
+                <h2>Contact me</h2>
+            </div>            
             <p>ph: 956-202-3722</p>
         </footer>
     </body>
