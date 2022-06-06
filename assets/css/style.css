@@ -1,6 +1,7 @@
 :root {
     --primary:rgb(48, 47, 58);
     --secondary:rgb(168, 208, 216);
+    --tertiary: rgb(80, 79, 95);
     --standard-px: 48px;
 }
 
@@ -41,20 +42,24 @@ header nav {
 header nav ul {
     display: flex;
     margin: 10px;
-    margin-right: 40px;
+    margin-right: 75px;
     padding: 10px;
     justify-content: space-around;
     list-style: none;
     align-items: center;    
+    
 }
 
 header nav ul li {
     padding: 10px;
-
 }
 
 header nav ul li a {
-    color: var(--secondary);   
+    color: var(--secondary);
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 4px solid var(--secondary);
+    padding-bottom: 4px;
 }
 
 .second-background {
@@ -66,9 +71,12 @@ header nav ul li a {
 }
 
 .second-background p {   
+    color: var(--primary);
     font-size: 25px;
+    font-weight: bold;
     position: absolute;
     top: 270px;
+    right: 100px;
     background: var(--secondary);
 }
 
@@ -91,14 +99,21 @@ body {
 .desc {
     display: flex;
     margin-bottom: 20px;
+    margin-left: 37px;
 }
 
 .desc h2 {
     text-align: right;
 }
 
-.desc div p {
-    margin: 0 0 0 20px;
+.about {
+    margin-right: 50px;
+}
+
+.about p {
+    color: rgb(85, 84, 104);
+    font-weight: bold;
+    margin: 0 0 0 30px;
 }
 
 .work {
@@ -113,11 +128,16 @@ body {
     overflow: auto;
     flex-direction: row;
     flex: 1 1 40%;
-    margin-left: 20px;
+    margin-left: 30px;
+}
+
+.pics div {
+    margin-right: 70px;
 }
 
 .pics img {
     max-width: 70%;
+    border: 5px solid var(--secondary);
 }
 
 .headings {
@@ -125,19 +145,14 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     padding-right: 10px;
-    border-right: 3px solid var(--primary);
-    margin-left: 70px;
+    border-right: 4px solid var(--tertiary);
+    margin-left: 150px;
 }
 
 h2 {
     font-size: var(--standard-px);
-    color: var(--primary);
+    color: var(--tertiary);
     text-align: right;
-}
-
-.pics img {
-    border: 5px solid var(--secondary);
-    margin: 5px;
 }
 
 footer {
