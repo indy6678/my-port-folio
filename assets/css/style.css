@@ -66,7 +66,8 @@ header nav ul li a {
     display: flex;
     justify-content: right;
     height: 250px;
-    background-image: url("https://picsum.photos/300");   
+    background-image: url(../images/second-background.jpg);
+    /* background-image: url("https://picsum.photos/300");    */
     margin-bottom: 20px; 
 }
 
@@ -121,22 +122,40 @@ body {
 .pics {
     display: flex;
     flex-wrap: wrap;
-    overflow: auto;
     flex-direction: row;
-    flex: 1 1 40%;
     margin-left: 30px;  
     margin-right: 70px;
 }
 
 .pics div p {
-    position: relative;
-    top: 250px;
-    /* padding: 20px;
-    background: var(--secondary) */
+    position: absolute;
+    top: 350px;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    padding: 20px;
+    background: var(--secondary);
+    resize: auto;
+}
+.main-img img{
+    width: 100%;
+    border: 5px solid var(--secondary);
 }
 
-.pics img {
-    max-width: 100%;
+.add-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.add-img div {
+    margin: 10px 0 10px 0;
+}
+
+.add-img img {
+    width: 100%;
     border: 5px solid var(--secondary);
 }
 
@@ -157,20 +176,28 @@ h2 {
 
 footer {
     display: flex;
-    align-items: center; 
-    
+    align-items: center;     
 }
 
-footer div {
+footer .headings {
     padding: 0 30px 0 0px;
-    width: 189px;
-    
+    width: 189px;    
 }
 
-footer p {
+.contact-list {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 1%;
     font-weight: bold;
-    margin-left: 29px;
-    padding: 5px;
-    border-bottom: 3px solid var(--primary);
+    margin-left: 29px;    
     color: var(--primary);
+    /* width: 100%; */
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: var(--primary);
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 3px solid var(--primary);
 }
