@@ -12,6 +12,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* Style Nav Section - Start */
 .top {
     display: flex;
     flex-direction: column;
@@ -20,6 +22,9 @@
 .name {
     background: var(--secondary);
     color: var(--primary);
+    margin: 20px;
+    font-size: var(--standard-px);
+    text-shadow: 0 0 10px rgba(199, 183, 42, 0.479);
 }
 
 header {
@@ -28,11 +33,6 @@ header {
     flex-wrap: wrap;
     background: var(--primary);
     justify-content: space-between;
-}
-
-.name {
-    margin: 20px;
-    font-size: var(--standard-px);
 }
 
 header nav {
@@ -47,7 +47,6 @@ header nav ul {
     justify-content: space-around;
     list-style: none;
     align-items: center;    
-    
 }
 
 header nav ul li {
@@ -59,7 +58,14 @@ header nav ul li a {
     font-size: 18px;
     text-decoration: none;
     border-bottom: 4px solid var(--secondary);
-    padding-bottom: 4px;
+    padding: 4px;
+    margin: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
 }
 
 .second-background {
@@ -67,25 +73,15 @@ header nav ul li a {
     justify-content: right;
     height: 250px;
     background-image: url(../images/second-background.jpg);
-    /* background-image: url("https://picsum.photos/300");    */
+    background-repeat: round;
     margin-bottom: 20px; 
-}
-
-.second-background p {   
-    color: var(--primary);
-    font-size: 25px;
-    font-weight: bold;
-    position: absolute;
-    top: 270px;
-    right: 100px;
-    background: var(--secondary);
 }
 
 .me-img {
     position: absolute;
     top: 100px;
     left: 115px;
-    width: 209px;    
+    width: 209px;
 }
 
 .me-img img {
@@ -96,76 +92,31 @@ header nav ul li a {
 body {
     background-color: rgb(225, 225, 245);
 }
+/* Style Nav Section - End */
 
+/* Style About Section - Start */
 .desc {
     display: flex;
     margin-bottom: 20px;
-    margin-left: 37px;
+  }
+
+.bodies {
+    padding: 0 70px 0 30px;
+    border-left: 4px solid var(--tertiary);
+    width: 80%;
 }
 
-.about {
-    margin-right: 50px;
+.headings {
+    min-width: 20%;
+    width: 20%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-shadow: 0 0 10px rgba(99, 46, 46, 0.5);
 }
 
 .about p {
     color: rgb(85, 84, 104);
     font-weight: bold;
-    margin: 0 0 0 30px;
-}
-
-.work {
-    display: flex;
-    margin-left: 57px;
-    margin-bottom: 20px;
-}
-
-.pics {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: 30px;  
-    margin-right: 70px;
-}
-
-.pics div p {
-    position: absolute;
-    top: 350px;
-    width: auto;
-    height: auto;
-    z-index: 1;
-    padding: 20px;
-    background: var(--secondary);
-    resize: auto;
-}
-.main-img img{
-    width: 100%;
-    border: 5px solid var(--secondary);
-}
-
-.add-img {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 40%;
-}
-
-.add-img div {
-    margin: 10px 0 10px 0;
-}
-
-.add-img img {
-    width: 100%;
-    border: 5px solid var(--secondary);
-}
-
-.headings {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-right: 10px;
-    border-right: 4px solid var(--tertiary);
-    margin-left: 150px;
 }
 
 h2 {
@@ -173,31 +124,173 @@ h2 {
     color: var(--tertiary);
     text-align: right;
 }
+/* Style About Section - End */
 
-footer {
+/* Style Work Section - Start*/
+.work {
     display: flex;
-    align-items: center;     
+    margin-bottom: 20px;
 }
 
-footer .headings {
-    padding: 0 30px 0 0px;
-    width: 189px;    
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 70px;
+}
+
+.main-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.label1, .add-img div a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.label1 {
+    margin-bottom: 5px;
+}
+
+.main-img img{
+    width: 100%;
+    border: 5px solid var(--secondary);
+}
+
+.add-img {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.add-img div {
+    display: flex;
+    max-width: 49%;
+    margin: 10px 0 10px 0;
+    flex-direction: column;
+}
+
+.add-img img {
+    max-width: 100%;
+    border: 5px solid var(--secondary);
+}
+/* Style Work Section - End */
+
+
+/* Add contact section style */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;   
+    margin-bottom: 20px;  
 }
 
 .contact-list {
+    height: 100px;    
     display: flex;
     justify-content: space-around;
-    flex: 1 1 1%;
+    align-items: center;
     font-weight: bold;
-    margin-left: 29px;    
     color: var(--primary);
-    /* width: 100%; */
 }
 
 .contact-list a {
     text-decoration: none;
     color: var(--primary);
-    margin: 20px;
     padding: 10px;
     border-bottom: 3px solid var(--primary);
+    flex-shrink: 2
+}
+
+/* Add RWD styling */
+@media screen and (max-width: 980px) {
+    header {
+        text-align: center;
+        height:auto;
+        justify-content: center;
+        background-image: url(../images/second-background.jpg);
+    }
+    
+    .name {
+        padding: none;
+        background: none;
+        color: var(--secondary);
+        text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    }
+
+    .second-background {
+        background-image: none;
+        content-visibility: hidden;
+        height: 0px;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        display: flex;
+        margin: 0;
+        padding: 10px;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;    
+    }
+
+    .me-img {
+        position: unset;
+        align-self: center;
+        margin-top: 10px;
+        width: unset;
+        
+    }
+
+    .me-img img {
+        border: 3px solid black;
+        max-width: 350px;
+    }
+
+    .desc, .work, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headings {
+        width: unset;
+        padding: none;
+        border-bottom: 3px solid var(--primary);
+    }
+
+    .about, .about p {
+        width: unset;
+    }
+
+    .bodies {
+        width: unset;
+        border: none;
+        padding: 50px;
+        margin: 0;
+    }
+
+    .contact-list div a {
+        border: none
+    }
+
+    .label1 {
+        position: unset;
+    }
+
+    .main-img, .add-img {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .add-img div {
+        max-width: unset;
+    }
 }
