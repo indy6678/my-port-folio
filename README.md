@@ -1,7 +1,7 @@
 # My Portfolio
 
 ## Purpose
-A place to showcase my apps
+A place to showcase myself and my work
 
 ## Built with
 *HTML
@@ -9,7 +9,9 @@ A place to showcase my apps
 
 ## Website
 
+https://github.com/indy6678/my-port-folio
+
 
 ## Contribution
 
-
+https://developer.mozilla.org
