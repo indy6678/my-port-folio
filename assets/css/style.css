@@ -167,13 +167,14 @@ h2 {
     text-decoration: none;
     text-align: center;
     color: var(--primary);
+    font-size: large;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin: 10px;
 }
 
 .main-img img{
     width: 100%;
-    border: 5px solid var(--secondary);
+    box-shadow: 0 0 10px black;
 }
 
 .add-img {
@@ -193,8 +194,9 @@ h2 {
 
 .add-img img {
     max-width: 100%;
-    border: 5px solid var(--secondary);
+    box-shadow: 0 0 10px black;
 }
+
 
 /* Style Work Section - End */
 
@@ -279,7 +281,8 @@ footer {
     }
 
     .me-img img {
-        border: 3px solid black;
+        /* border: 3px solid black; */
+        box-shadow: 0 0 10px black;
         max-width: 350px;
     }
 
